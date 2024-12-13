@@ -1,0 +1,11 @@
+[package]
+name = "ni_rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+inquire = "0.7.5"
+colored = "2.1.0"
+clap = "4.5.23"
+which = "7.0.0"
+package_manager_detector_rs = { path = "../../oxwazz-collections/rust/6-package-manager-detector-rs" }

@@ -8,4 +8,10 @@ inquire = "0.7.5"
 colored = "2.1.0"
 clap = "4.5.23"
 which = "7.0.0"
-package_manager_detector_rs = { path = "../../oxwazz-collections/rust/6-package-manager-detector-rs" }
+package_manager_detector_rs = { path = "../6-package-manager-detector-rs" }
+serde = { version = "1.0.216", features = ["derive"] }
+serde_json = "1.0.133"
+tempfile = "3.14.0"
+
+[dev-dependencies]
+insta = "1.41.1"

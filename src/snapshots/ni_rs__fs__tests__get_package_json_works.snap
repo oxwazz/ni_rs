@@ -1,0 +1,54 @@
+---
+source: src/fs.rs
+assertion_line: 63
+expression: result
+snapshot_kind: text
+---
+Some(
+    PackageJson {
+        scripts: Some(
+            Object {
+                "build": String("unbuild"),
+                "dev": String("tsx src/commands/ni.ts"),
+                "lint": String("eslint .."),
+                "nr": String("tsx src/commands/nr.ts"),
+                "prepare": String("npx simple-git-hooks"),
+                "prepublishOnly": String("npm run build"),
+                "release": String("bumpp && npm publish"),
+                "stub": String("unbuild --stub"),
+                "test": String("vitest"),
+                "typecheck": String("tsc"),
+            },
+        ),
+        scripts_info: None,
+        dependencies: None,
+        dev_dependencies: Some(
+            Object {
+                "@antfu/eslint-config": String("^3.9.1"),
+                "@posva/prompts": String("^2.4.4"),
+                "@types/fs-extra": String("^11.0.4"),
+                "@types/ini": String("^4.1.1"),
+                "@types/node": String("^22.9.0"),
+                "@types/which": String("^3.0.4"),
+                "bumpp": String("^9.8.1"),
+                "eslint": String("^9.15.0"),
+                "fs-extra": String("^11.2.0"),
+                "fzf": String("^0.5.2"),
+                "ini": String("^5.0.0"),
+                "lint-staged": String("^15.2.10"),
+                "package-manager-detector": String("^0.2.4"),
+                "picocolors": String("^1.1.1"),
+                "simple-git-hooks": String("^2.11.1"),
+                "taze": String("^0.18.0"),
+                "terminal-link": String("^3.0.0"),
+                "tinyexec": String("^0.3.1"),
+                "tinyglobby": String("^0.2.10"),
+                "tsx": String("^4.19.2"),
+                "typescript": String("^5.6.3"),
+                "unbuild": String("^2.0.0"),
+                "vitest": String("^2.1.5"),
+                "which": String("^5.0.0"),
+            },
+        ),
+    },
+)
